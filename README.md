@@ -3,18 +3,6 @@
 Javascript class support
 
 ## Getting Started
-### On the server
-Install the module with: `npm install class.support`
-
-```javascript
-require('class.support');
-Class('cn.cuizuoli.Test', {
-	init: function() {
-		//TODO init.
-	}
-});
-```
-
 ### In the browser
 Download the [production version][min] or the [development version][max].
 
