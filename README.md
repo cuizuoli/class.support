@@ -14,11 +14,22 @@ In your web page:
 ```html
 <script src="dist/class.support.min.js"></script>
 <script>
-Class('cn.cuizuoli.Test', {
-	init: function() {
+Class('cn.cuizuoli.ClassSupportTest', {
+	init: function(options) {
+		var _this = this;
+		_this._options = $.extend({
+			id: 'body'
+		}, options);
+		_this._root = $(_this._options.id);
+		_this._bindEvent();
 		//TODO init.
+	},
+	_bindEvent: function() {
+		var _this = this;
+		// TODO binding event.
 	}
 });
+new cn.cuizuoli.ClassSupportTest();
 </script>
 ```
 
